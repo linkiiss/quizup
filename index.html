@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizUp!</title>
+<link rel="icon" href="qup.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+	<div class="fullscreen-image">
+        <img class="noise" src="elems/noise-texture.png">
+    </div>
+	<div class="container flex-design" >
+		<section id="warmup-phrase" class="flex-design">
+			<p id="warmup-phrase-text">One, two, QuizUp!</p>
+			<img id="logo-break" src="elems/break.svg"> 
+			
+		</section>
+
+		<section id="nav-games" class="flex-design">
+			<div id="header-navigation" class="navigation">
+				<a href="index.html" >
+					<img id="logo" src="elems/logo.svg"></img>
+				</a>
+				<div class="main-nav">
+					<ul>
+					  <li><a href="index.html#about-us">О нас</a></li>
+					  <li><a href="index.html#quiz-games">Игры</a></li>
+					  <li><a href="rating.html">Рейтинг</a></li>
+					  <li><a href="index.html#questions-text">Контакты</a></li>
+					  <li ><a class="to-cabinet-index" href="registration.html">Личный кабинет</a></li>
+					</ul>
+				</div>
+			</div>
+			<p id="quizup-moto">Квизы - залог <br>приятного времяпрепровождения</p>
+			<div id="to-games" >
+				<a href="index.html#quiz-games">
+					<p id="to-games-text">К ИГРАМ </p>
+				</a>
+			</div>
+			<img id="nav-games-disco-ball" src="elems/nav-games-disco-ball.png"></img>
+			<img id="nav-games-pc" src="elems/nav-games-pc.png"></img>
+			
+		</section>
+
+
+		<section id="about-us" class="flex-design">
+			<div class="section-name-container">
+				<img id="about-us-decor-thing" class="decor-thing" src="elems/about-us-thing.svg"></img>
+				<h2>О НАС</h2> 
+			</div>
+			
+			
+			<div id="about-us-desc-container">
+				<div class="about-us-section" id="about-us-desc-quizup"> 
+					<img id="about-us-micro" class="placeble-img" src="elems/about-us-micro.png">
+					<p class="about-us-section-name">QuizUp</p>
+					<p class="about-us-section-desc">Это отличный вариант развлечения, где каждый может выбрать наиболее понравившуюся игру</p>
+					
+				</div> 
+				<div class="about-us-section" id="about-us-desc-play-in-teams"> 
+					<img id="about-us-handshake" class="placeble-img" src="elems/about-us-handshake.png">
+					<p class="about-us-section-name">Играйте в командах!</p>
+					<p class="about-us-section-desc">На встречах с друзьями или с семьёй вы можете разбится на команды и посоревноваться, играя в квизы. <br>
+					Или можно играть в одиночку, от этого игры скучнее не становятся :)</p>
+				</div>
+				<div class="about-us-section" id="about-us-desc-balls"> 
+					<img id="about-us-777" class="placeble-img" src="elems/about-us-777.png">
+					<p class="about-us-section-name">Баллы</p>
+					<p class="about-us-section-desc">В зависимость от того, <br>как вы прошли квиз, <br>в конце игры вам начислится определённое количество баллов</p>
+				</div>
+				<div class="about-us-section" id="about-us-desc-rating"> 
+					<img id="about-us-arrow-up" class="placeble-img" src="elems/about-us-arrow-up.png">
+					<p class="about-us-section-name">Рейтинги</p>
+					<p id="about-us-section-desc-rating" class="about-us-section-desc">Играйте и  <br>обходите других <br>игроков по<br> количеству <br>баллов. Ваш <br>прогресс будет <br>отображаться в <br>рейтинговом <br>списке </p>
+				</div>
+				<div class="about-us-section" id="about-us-desc-registration"> 
+					<img id="about-us-eyes" class="placeble-img" src="elems/about-us-eyes.png">
+					<p class="about-us-section-name">Регистрация</p>
+					<p class="about-us-section-desc">Зарегистрируйтесь и отслеживайте свой прогресс в прохождения</p>
+					<a href="registration.html" >
+						<button id="about-us-desc-registration-sign">sign up</button>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<section id="quiz-games" class="flex-design">
+			<div class="section-name-container">
+				<img id="quiz-games-decor-thing" class="decor-thing" src="elems/quiz-games-thing.svg"></img>
+				<img id="lamp" src="elems/lamp.png"></img>
+				<h2>КВИЗ ИГРЫ</h2>
+			</div>
+			
+			<div id="quiz-games-container">
+				<div class="quiz-game-card flex-design" id="game-card-1">
+					<h5 class="quiz-game-name">Кино СССР</h5>
+					<img id="quiz-games-ussr-movies" class="games-placeble-img" src="elems/quiz-games-ussr-movies.png">
+					<p class="quiz-game-desc">Играйте, ностальгируйте <br>или узнавайте <br>новое о былом <br>времени совместно с <br>Кинопоиском</p>
+					<div class="quiz-game-time-button-start-container">
+						<div class="quiz-game-time">
+							<img class="clock-logo" src="elems/clock.svg">
+							<p class="quiz-time" >15 минут</p>
+						</div>
+						<button id="ussrmovies" class="quiz-game-button-start">играть</button>
+					</div>
+				</div>
+				
+				<div class="quiz-game-card flex-design" id="game-card-2">
+					<h5 class="quiz-game-name">Мировое кино</h5>
+					<img id="quiz-games-mr-bin" class="games-placeble-img" src="elems/quiz-games-mr-bin.png">
+					<p class="quiz-game-desc">Совместно с <br>Кинопоиском мы <br>собрали для вас <br>квиз о всемирно <br>известных <br>фильмах</p>
+					<div class="quiz-game-time-button-start-container">
+						<div class="quiz-game-time">
+							<img class="clock-logo" src="elems/clock.svg">
+							<p class="quiz-time" >15 минут</p>
+						</div>
+						<button id="worldwidemovies" class="quiz-game-button-start">играть</button>
+					</div>
+				</div>
+				
+				<div class="quiz-game-card flex-design" id="game-card-3">
+					<h5 class="quiz-game-name">Мультфильмы</h5>
+					<img id="quiz-games-simpsons" class="games-placeble-img" src="elems/quiz-games-simpsons.png">
+					<p class="quiz-game-desc">Окунитесь в <br>детство и пройдите <br>квиз о мультфильмах <br>разных поколений, <br>собраных Кинопоиском</p>
+					<div class="quiz-game-time-button-start-container">
+						<div class="quiz-game-time">
+							<img class="clock-logo" src="elems/clock.svg">
+							<p class="quiz-time" >15 минут</p>
+						</div>
+						<button id="cartoons" class="quiz-game-button-start">играть</button>
+					</div>
+				</div>
+				
+				<div class="quiz-game-card flex-design" id="game-card-4">
+					<h5 class="quiz-game-name">Музыка пред 00х</h5>
+					<img id="quiz-games-kish" class="games-placeble-img" src="elems/quiz-games-kish.png">
+					<p class="quiz-game-desc">Окунитесь в <br>атмосферу <br>прошедших лет и <br>их культуру <br>совместно с <br>Яндекс.Музыкой</p>
+					<div class="quiz-game-time-button-start-container">
+						<div class="quiz-game-time">
+							<img class="clock-logo" src="elems/clock.svg">
+							<p class="quiz-time" >15 минут</p>
+						</div>
+						<button id="music00" class="quiz-game-button-start">играть</button>
+					</div>
+				</div>
+				
+				<div class="quiz-game-card flex-design" id="game-card-5">
+					<h5 class="quiz-game-name">Культовая музыка</h5>
+					<img id="quiz-games-bowey" class="games-placeble-img" src="elems/quiz-games-bowey.png">
+					<p class="quiz-game-desc">Вместе с Яндекс.<br>Музыкой играйте <br>и наслаждайтесь <br>бессмертными <br>композициями <br>всемирного <br>масштаба</p>
+					<div class="quiz-game-time-button-start-container">
+						<div class="quiz-game-time">
+							<img class="clock-logo" src="elems/clock.svg">
+							<p class="quiz-time" >15 минут</p>
+						</div>
+						<button id="cultmusic" class="quiz-game-button-start">играть</button>
+					</div>
+				</div>
+				
+				<div class="quiz-game-card flex-design" id="game-card-6">
+					<h5 class="quiz-game-name">Музыка modernа</h5>
+					<img id="quiz-games-weekend" class="games-placeble-img" src="elems/quiz-games-weekend.png">
+					<p class="quiz-game-desc">Современные <br>музыкальные тренды и <br>композиции от Яндекс.Музыки уже <br>в этом квизе</p>
+					<div class="quiz-game-time-button-start-container">
+						<div class="quiz-game-time">
+							<img class="clock-logo" src="elems/clock.svg">
+							<p class="quiz-time" >15 минут</p>
+						</div>
+						<button id="modernmusic" class="quiz-game-button-start">играть</button>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+		</section>
+		
+		
+		<footer class="flex-design footer-red-underneath">
+			<div class="footer-black-top flex-row">
+				<a href="index.html" >
+						<img id="footer-logo" class="logo" src="elems/logo.svg"></img>
+				</a>
+				<div class="footer-other-container flex-design">
+					<div id="footer-navigation" class="navigation">
+						
+						<div class="main-nav">
+							<ul>
+								<li><a href="#about-us">О нас</a></li>
+								<li><a href="#quiz-games">Игры</a></li>
+								<li><a href="rating.html">Рейтинг</a></li>
+								<li><a href="#questions-text">Контакты</a></li>
+								<li ><a class="to-cabinet-index" href="registration.html">Личный кабинет</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="questions-social-media-hand-container flex-row">
+						<div id="questions-text">
+							<p>Любые вопросы по играм</p>
+							<p>quizup@gmail.com</p>
+						</div>
+						<div class="social-media-hand-container flex-row">
+							<img id="hand" src="elems/hand.png"></img>
+							<div class="social-media-container flex-row">
+								<a class="social-media-link" href="t.com" >
+									<img class="social-media-logo" src="elems/tg.svg"></img>
+								</a>
+								
+								<a class="social-media-link" href="vk.com"> 
+									<img class="social-media-logo" src="elems/vk.svg"></img>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

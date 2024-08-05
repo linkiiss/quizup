@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizUp!</title>
+<link rel="stylesheet" href="regstyle.css">
+<link rel="icon" href="qup.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body >
+<div class="container flex-design">
+	<div id="login-window" class="sign-window flex-design" >
+		<div class="name-decor-thing-container flex-design" >
+			<p class="sign-form-name" > Вход</p>
+			<img id="login-thing" src="elems/login-thing.svg" > </img>
+		</div>
+		<form id="reg-form" class="flex-design" name="reg-form" action="POST" >
+		<label for="username" >Имя пользователя</label>
+			<input type="text" name="username" id="username" required placeholder="Введите имя"></input>
+			<label for="user-pwd" >Пароль</label>
+			<div class="password-eye-container">
+				<div class="flex-centered eye-container">
+					<img class="eye-img" src="elems/closed-eye.svg"></img>
+				</div>
+				<input type="password" name="user-pwd" id="user-pwd" required placeholder="Введите пароль" ></input> 
+				<a class="remember-not" href="404.html">Не помню пароль</a>
+			</div>
+			
+			<button class="true-submit-button" type="submit" value="log-in" class="sign-successful" >log in</button>
+			
+			<div class="login-button flex-design" >
+				
+				<button class="sign-placeholder sign-successful" value="log-in" >log in</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="sign-successful-container flex-design" > 
+		<div class="sign-successful-container-text-wrapper">
+			<p class="sign-successful-text">Вход прошел успешно</p>
+		</div>
+		<div class="sign-successful-buttons-container" > 
+			
+			<a class="sign-successful-a1" href="index.html">
+				<div class="button-wrapper" >
+					<p class="button-text1 to-home">на главную</p>
+				</div>
+			</a>
+			<a class="sign-successful-a2" href="cabinet.html">
+				<div class="button-wrapper" >
+					<p class="button-text2 to-cabinet" >в личный кабинет</p>
+				</div> 
+			</a>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

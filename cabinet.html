@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizUp!</title>
+<link rel="stylesheet" href="regstyle.css">
+<link rel="icon" href="qup.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body >
+	<div class="container flex-design">
+		<div class="cabinet-window">
+			<div id="photo-personal-info-container" >
+				<div class="photo" >
+					<img id="photo" src="elems/photo.png"> </img>
+				</div>
+				
+				<div id="personal-info-container" class="flex-design"> 
+					<p class="personal-info-hint">Никнейм:</p>
+					<p class="personal-info-info">Мальчик-который-выиграл</p>
+					
+					<p class="personal-info-hint">Имя:</p>
+					<p class="personal-info-info">Гарри</p>
+					
+					<p class="personal-info-hint">Фамилия:</p>
+					<p class="personal-info-info">Поттер</p>
+					
+					<p class="personal-info-hint">Дата регистрации: 13.08.2024</p>
+				
+				</div>
+			</div>
+			
+			<img class="stick-img" src="elems/stick.svg"> </img>
+			
+			<div class="personal-stats-container flex-design"> 
+				<div class="personal-stats-balls-container flex-centered"> 
+					<div class="personal-stats-sign flex-centered"> 
+						<img class="personal-stats-img" src="elems/balls-amount.png"> </img>
+					</div>
+					<p class="personal-stats-text">кол-во баллов  &nbsp  &nbsp —  &nbsp  &nbsp 100</p>
+				</div>
+				<div class="personal-stats-rating-place-container flex-centered"> 
+					<div class="personal-stats-sign flex-centered"> 
+						<img class="personal-stats-img" src="elems/rating-place.png"> </img>
+					</div>
+					<p class="personal-stats-text">место в рейтинге   &nbsp  &nbsp —   &nbsp  &nbsp 1</p>
+				</div>
+
+			</div>
+			
+			<img class="stick-img" src="elems/stick.svg"> </img>
+			
+			<div class="personal-passed-quiz flex-design">
+				<div class="personal-passed-quiz">Пройденные квизы</div>
+				<div class="personal-passed-quiz-list-arrows flex-centered"> 
+				<div class="flex-centered arrow-holder">
+					<img  class="arrow" src="elems/left-arrow.svg"> </img>
+				</div>
+				<div class="personal-passed-quiz-list-element flex-centered"> 
+					<p class="personal-passed-quiz-list-element-text">Мультфильмы</p>
+				</div>
+				<div class="personal-passed-quiz-list-element flex-centered"> 
+					<p class="personal-passed-quiz-list-element-text">Кино СССР</p>
+				</div>
+				<div class="flex-centered arrow-holder">
+					<img class="arrow"src="elems/right-arrow.svg"> </img>
+				</div>
+				</div>
+			</div>
+			
+			<a id="cabinet-to-home-link" href="index.html"><button id="cabinet-to-home"> на главную </button></a>
+		</div>
+</body>
+</html>

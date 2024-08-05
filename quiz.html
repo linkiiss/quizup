@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizUp!</title>
+<link rel="icon" href="qup.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+	<div class="fullscreen-image">
+        <img class="noise" src="elems/noise-texture.png">
+    </div>
+	<div class="quiz-page-back" >
+		<div id="quiz-page-entry" class="quiz-page-container" >
+			<div class="quiz-page-name"></div>
+			<img src="elems/quiz-page-stick.svg" class="quiz-page-stick"> </img>
+			<p class="quiz-page-desc"></p>
+			<div class="quiz-page-time">Время прохождения примерно <span id="quiz-page-exact-time"></span> минут</div>
+			<div class="quiz-page-play-other-container flex-row"> 
+				<div class="quiz-page-play-button quiz-page-button">
+					<p class="quiz-page-button-text">ИГРАТЬ</p>
+				</div>
+				<a href="index.html#quiz-games">
+					<div class="quiz-page-other-button quiz-page-button">
+						<p class="quiz-page-button-text">выбрать другую игру</p>
+					</div>
+				</a>
+			</div>
+			<img src="elems/quiz1/quiz-page-img1.png" class="quiz-page-img1 placeble-img"> </img>
+			
+				<img src="elems/quiz1/quiz-page-img2.png" class="quiz-page-img2 placeble-img"> </img>
+			
+		</div>
+		
+		<div id="quiz-page-questions-container" class="quiz-page-container" > 
+			<div class="quiz-page-questions-img-container">
+				<img class="quiz-page-questions-img" src="elems/quiz1/1.jpg"> </img>
+			</div>
+			<div class="quiz-page-eachquestion-container"> 
+				<div class="quiz-page-eachquestion-underneath"> </div>
+				<p class="quiz-page-eachquestion-text">Сколько детей было у Шрека?</p>
+			</div>
+			
+			<div class="quiz-page-answers-container">
+				<div class="quiz-answer-container quiz-answer-container-1">
+					<p class="answer answer-1">А. один</p>
+				</div>
+				
+				<div class="quiz-answer-container quiz-answer-container-2">
+					<p class="answer answer-2">Б. три</p>
+				</div>
+				
+				<div class="quiz-answer-container quiz-answer-container-3">
+					<p class="answer answer-3">В. два</p>
+				</div>
+				
+				<div class="quiz-answer-container quiz-answer-container-4">
+					<p class="answer answer-4">Г. четыре</p>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="quiz-page-end" class="quiz-page-container">
+			<p id="congrats">Поздравляем!</p>
+			<div class="balls-counter-container flex-row">
+				<img id="quiz-end-decor-thing" class="decor-thing" src="elems/quiz-end-thing.svg"> </img>
+				<p class="balls-counter-text">Вы набрали <p id="balls-counter"> </p></p>
+		
+			</div>
+			
+			<p class="quiz-page-end-desc"> </p>
+			<a href="index.html#quiz-games">
+					<div class="quiz-page-other-button quiz-page-button">
+						<p class="quiz-page-button-text">к другим квизам</p>
+					</div>
+			</a>
+		</div>
+		
+		
+		<a href="index.html#quiz-games">
+			<img class="cross" src="elems/cross.svg"> </img>
+		</a>
+		
+	</div>
+</body>
+</html>
